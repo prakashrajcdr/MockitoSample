@@ -33,8 +33,6 @@ public class AddCustomerServiceUnitTest {
 	@InjectMocks
 	CustomerService customerService;	
 	
-	//sonar scan - if else 15, constants
-	
 	@Test
 	public void addCustomerPositiveCase() {
 		System.out.println("test 1");
