@@ -13,10 +13,13 @@ import javax.persistence.Table;
 public class CustomerMaster {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "customerSeq")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customerSeq")
 	private Integer id;
 	private String name;
 	private String location;
+	private String email;
+	private String gender;
+	
 	
 	public CustomerMaster() { }
 
@@ -49,6 +52,22 @@ public class CustomerMaster {
 	}
 	public void setLocation(String location) {
 		this.location = location;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	@Override

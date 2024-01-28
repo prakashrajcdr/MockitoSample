@@ -19,6 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
     @Override
     public void configure(WebSecurity web) throws Exception {
+//    	web.ignoring();
     	web.ignoring()
     	.antMatchers("/api/getAllCustomers")
     	.antMatchers("/api/addCustomer")
